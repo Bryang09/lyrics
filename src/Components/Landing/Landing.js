@@ -2,10 +2,14 @@ import React from "react";
 
 import "./Landing.scss";
 
+import Hero from "./Hero/Hero";
+import Section1 from "./Section1/Section1";
+
 const Landing = () => {
   return (
     <div className="Landing">
-      <h1>Landing</h1>
+      <Hero />
+      <Section1 />
     </div>
   );
 };
