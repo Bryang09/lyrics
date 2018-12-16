@@ -2,13 +2,15 @@
   min-height: 60vh;
 
   .title {
-    width: 20vw;
+    // width: 20vw;
+    margin-bottom: 5vh;
+
     h2 {
-      color: #fff;
+      color: #333;
       font-weight: 300;
       margin-left: 5vw;
-      border-bottom: 1px solid #fff;
-      width: 100%;
+      border-bottom: 1px solid #333;
+      width: 25%;
       padding-bottom: 1vh;
       text-align: center;
       font-size: 1.7em;
