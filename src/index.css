@@ -16,3 +16,8 @@ hr {
   border-bottom: 2px solid #f4f4f4;
   width: 90vw;
 }
+
+a {
+  text-decoration: none;
+  color: #000;
+}

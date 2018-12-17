@@ -23,13 +23,33 @@
     }
   }
 
-  // .listingInfo {
-  //   h4,
-  //   h5,
-  //   h6 {
-  //     font-weight: 400;
-  //   }
-  // }
+  .listingInfo {
+    h5,
+    h6 {
+      font-weight: 400;
+    }
+
+    h4 {
+      font-weight: 700;
+
+      a {
+        &:hover {
+          cursor: pointer;
+          color: #7260ff;
+          transition: 0.5s ease;
+        }
+      }
+    }
+    h5 {
+      a {
+        &:hover {
+          cursor: pointer;
+          color: #7260ff;
+          transition: 0.5s ease;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {

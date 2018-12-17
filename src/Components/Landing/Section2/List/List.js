@@ -1,5 +1,6 @@
 import React from "react";
 import StyledProgressbar from "./ProgressBar/ProgressBar";
+import { Link } from "react-router-dom";
 
 import "./List.scss";
 
@@ -13,7 +14,13 @@ const List = props => {
     return (
       <div className="list" key={result.artist_id}>
         <h3>
-          {result.artist_name}
+          <Link
+            to={{
+              pathname: `artist/${result.artist_id}`
+            }}
+          >
+            {result.artist_name}
+          </Link>
           <img
             src="https://img.icons8.com/ios/50/7260ff/musical-notes-filled.png"
             alt="Music Icon"
