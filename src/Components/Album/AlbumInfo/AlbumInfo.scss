@@ -1,0 +1,35 @@
+.AlbumInfo {
+  height: 40vh;
+  background: linear-gradient(#000, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  .albumCover {
+    width: 20%;
+    height: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .albumInformation {
+    margin-left: 10vw;
+
+    h2 {
+      font-weight: 400;
+      font-size: 2em;
+    }
+    h3,
+    h4,
+    h5 {
+      font-weight: 300;
+    }
+
+    .Rating {
+      span {
+        margin-left: 0.5vw;
+      }
+    }
+  }
+}

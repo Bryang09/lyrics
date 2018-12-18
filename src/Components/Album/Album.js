@@ -3,10 +3,12 @@ import React, { Component } from "react";
 import { Request } from "../../Request";
 
 import axios from "axios";
+import AlbumInfo from "./AlbumInfo/AlbumInfo";
 
 class Album extends Component {
   state = {
-    tracks: []
+    tracks: [],
+    info: []
   };
 
   componentWillMount = () => {
@@ -19,12 +21,19 @@ class Album extends Component {
       )
       .then(res => this.setState({ tracks: res.data.message.body.track_list }))
       .catch(err => console.log(err));
+    axios
+      .get(
+        `${Request}album.get?album_id=${album}&apikey=${
+          process.env.REACT_APP_KEY
+        }`
+      )
+      .then(res => this.setState({ info: res.data.message.body.album }))
+      .catch(err => console.log(err));
   };
   render() {
-    console.log(this.props);
     return (
       <div className="Album">
-        <h1>Album</h1>
+        <AlbumInfo album={this.state.info} />
       </div>
     );
   }

@@ -1,4 +1,5 @@
 import React from "react";
+import ProgressBar from "../../../Landing/Section2/List/ProgressBar/ProgressBar";
 
 import { Link } from "react-router-dom";
 
@@ -25,7 +26,11 @@ const Album = props => {
               {album.album_name}
             </Link>
           </h4>
-          <h4 style={{ fontWeight: 300 }}>{album.album_release_date}</h4>
+          {/* <h4 style={{ fontWeight: 400 }}>{album.album_release_date}</h4> */}
+          <ProgressBar
+            percentage={album.album_rating}
+            text={`${album.album_rating}%`}
+          />
         </div>
       </div>
     );

@@ -39,7 +39,7 @@ const Listing = props => {
             </Link>
           </h5>
           <h6>
-            {genre ? genre.music_genre.music_genre_name : "We're Calculating"}
+            {genre ? genre.music_genre.music_genre_name : "Not Available"}
           </h6>
         </div>
       </div>
