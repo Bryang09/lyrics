@@ -13,7 +13,7 @@ const Routes = () => {
       <Route exact path="/" component={Landing} />
       <Route exact path="/artist/:id" component={Artist} />
       <Route exact path="/album/:id" component={Album} />
-      <Route exact path="/song/:id" component={Song} />
+      <Route exact path="/song/:id/:commonId" component={Song} />
     </Switch>
   );
 };

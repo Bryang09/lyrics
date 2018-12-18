@@ -23,7 +23,7 @@ const Listing = props => {
           <h4>
             <Link
               to={{
-                pathname: `/song/${result.track_id}`
+                pathname: `/song/${result.track_id}/${result.commontrack_id}`
               }}
             >
               {result.track_name}

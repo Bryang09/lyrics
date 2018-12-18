@@ -1,0 +1,53 @@
+.Song {
+  width: 95vw;
+  margin: 0 auto;
+}
+
+.songInfo {
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .img {
+    width: 20%;
+    height: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 5vw;
+    transform: translateX(-5vw);
+  }
+
+  .songDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+      span {
+        color: #7260ff;
+        margin-right: 1vw;
+      }
+    }
+  }
+}
+
+.lyrics {
+  width: 90vw;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    // border-bottom: 1px solid red;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    width: 30vw;
+    margin: 0 auto;
+  }
+  h4 {
+    font-weight: 400;
+    line-height: 50px;
+  }
+}

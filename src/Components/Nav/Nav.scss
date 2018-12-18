@@ -1,0 +1,15 @@
+.Nav {
+  display: flex;
+  align-items: center;
+  background: #333;
+  color: #fff;
+
+  .navTitle {
+    width: 40%;
+    text-align: center;
+  }
+
+  .Navigation {
+    width: 60%;
+  }
+}

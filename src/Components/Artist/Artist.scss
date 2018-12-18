@@ -1,0 +1,41 @@
+.artist {
+  height: 40vh;
+  background: linear-gradient(#934fae, #5d62ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // width: 90vw;
+  margin: 0 auto;
+  color: #fff;
+
+  .artistAlbumCover {
+    height: 40%;
+    width: 20%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .artistInfo {
+    // width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    margin-left: 3vw;
+
+    h2 {
+      font-weight: 400;
+    }
+
+    .genres {
+      display: flex;
+      font-size: 0.8em;
+
+      h3 {
+        font-weight: 300;
+        margin: 0 0.8vw;
+      }
+    }
+  }
+}
