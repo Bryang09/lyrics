@@ -26,6 +26,7 @@
 
     h2 {
       font-weight: 400;
+      font-size: 2em;
     }
 
     .genres {
@@ -38,4 +39,13 @@
       }
     }
   }
+}
+
+.Albums {
+  background: #000;
+  height: 110%;
+}
+
+.Artist {
+  background: #000;
 }

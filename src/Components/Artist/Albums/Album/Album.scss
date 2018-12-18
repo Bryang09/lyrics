@@ -1,0 +1,32 @@
+.album {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#b0b0b0, #eaeaea);
+  width: 95vw;
+  margin: 2vh auto;
+  border-radius: 5px;
+
+  .albumCover {
+    width: 20%;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .albumInfo {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+
+    h4 {
+      margin: 0 2vw;
+    }
+  }
+
+  &:nth-child(10) {
+    margin-bottom: 0;
+  }
+}
